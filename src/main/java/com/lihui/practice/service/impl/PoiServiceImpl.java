@@ -1,4 +1,4 @@
-package com.lihui.practice.serviceimpl;
+package com.lihui.practice.service.impl;
 
 import com.lihui.practice.service.PoiService;
 import org.springframework.http.ResponseEntity;
