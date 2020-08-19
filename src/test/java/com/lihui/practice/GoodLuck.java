@@ -1,6 +1,6 @@
 package com.lihui.practice;
 
-import com.lihui.practice.service.Shape;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
