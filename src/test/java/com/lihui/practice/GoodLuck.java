@@ -17,7 +17,7 @@ public class GoodLuck {
         int[] blue = new int[1];
         for (int i = 0; i < 1; i++) {
             Random r = new Random();
-            blue[i] = r.nextInt(36) + 1;
+            blue[i] = r.nextInt(32) + 1;
             for (int j = 0; j < i; j++) {
                 if (blue[i] == blue[j]) {
                     i--;
