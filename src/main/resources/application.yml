@@ -8,3 +8,7 @@ spring:
     url: jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false
     username: root
     password: root
+encrypt-jsk:
+  location: test-jwt.jks
+  name: test-jwt
+  password: test123

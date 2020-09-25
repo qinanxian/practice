@@ -1,5 +1,8 @@
 package com.lihui.practice.entity;
 
+import lombok.Data;
+
+@Data
 public class Teacher {
 
     private String id;
