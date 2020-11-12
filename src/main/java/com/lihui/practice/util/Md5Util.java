@@ -13,6 +13,7 @@ public class Md5Util {
 
     /**
      * md5加密
+     * lihui     2020-09-25
      *
      * @param str     需要的加密字符串
      * @param isUpper 字母大小写 （fales为小写，true为大写）
