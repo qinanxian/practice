@@ -12,6 +12,6 @@ public class SaticScheduleTask {
     //或直接指定时间间隔，例如：5秒
 //    @Scheduled(fixedRate=3000)
     private void configureTasks() {
-        
+
     }
 }
