@@ -1,0 +1,21 @@
+1.${}和#{}的区别
+
+#{}会自动在你要插入字段两端 加上引号。
+例如：你写的是order by #{username},传的是 zhangsan,那么会解析成order by “zhangsan”。
+
+${}是将传入的数据直接显示生成在sql中。
+如：order by ${user_id}，如果传入的值是111,那么解析成sql时的值为order by 111
+如果传入的值是id，则解析成的sql为order by id.
+
+#{}: 解析为一个 JDBC 预编译语句（prepared statement）的参数标记符,一个 #{ } 被解析为一个参数占位符 。
+${}: 仅仅为一个纯碎的 string 替换，在动态 SQL 解析阶段将会进行变量替换。在使用order by 时，就需要使用$;
+
+
+
+2.常见的属性
+    属性                                                   作用
+   namespace                                            对应Mapper接口的路径
+   id                                                   接口的方法名称【必须一致才能找到方法】
+   parameterType                                        对应Mapper接口入参时对应的参数的java类型
+   resultType                                           返回结果的类型（适用于单表查询）
+   resultMap                                            返回结果的类型（适用于多表查询）

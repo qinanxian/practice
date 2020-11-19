@@ -5,10 +5,16 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/mysql?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/testmysql
     username: root
     password: root
 encrypt-jsk:
   location: test-jwt.jks
   name: test-jwt
   password: test123
+
+mybatis:
+  #配置mapper路径
+  mapper-locations: classpath:mapper/*.xml
+  #控制台打印sql语句日志
+  configuration.log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

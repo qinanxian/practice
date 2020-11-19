@@ -8,14 +8,14 @@ import javax.servlet.http.HttpServletResponse;
 public interface PoiService {
     /**
      * 上传/导入
-     * @param file
+     * @param
      * @return
      */
-    ResponseEntity fileUpload(MultipartFile file);
+    void fileUpload();
 
     /**
      * 下载/导出
-     * @param response
+     * @param
      */
-    void downLoadExcel(HttpServletResponse response);
+    void downLoadExcel();
 }
