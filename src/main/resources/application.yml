@@ -18,3 +18,11 @@ mybatis:
   mapper-locations: classpath:mapper/*.xml
   #控制台打印sql语句日志
   configuration.log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#配置日志
+#根据日志级别配置，整个项目的输出日志的级别。默认是info
+logging:
+  level:
+    root: info
+  file:
+    path: E:/practice/src/main/resources/logger

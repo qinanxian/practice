@@ -1,0 +1,14 @@
+1.日志的级别
+
+    1.1 日志由低到高 trace<debug<info<warn<error
+
+    1.2 配置日志
+    根据日志级别配置，整个项目的输出日志的级别。默认是info
+    logging.level.root= error
+    定义项目中某个包的日志级别
+    logging.levelcom.lihui.practice.service.impl.PoiServiceImpl= error
+
+    1.3日志输出到文件中
+    logging.file= E:/practice/src/main/resources/logger
+
+    他就会自动的在你指定的路径下，创建springDemo.log文件，并且写入相关日志

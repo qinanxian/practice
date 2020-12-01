@@ -8,6 +8,6 @@ import java.util.List;
 
 @Mapper
 public interface PoiMapper {
-    @Select("select * from user")
+//    @Select("select * from user")
     List<User> queryUserList();
 }
