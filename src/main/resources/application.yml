@@ -26,3 +26,4 @@ logging:
     root: info
   file:
     path: E:/practice/src/main/resources/logger
+redis:

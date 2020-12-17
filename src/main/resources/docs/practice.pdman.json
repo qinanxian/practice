@@ -1,8 +1,8 @@
 {
   "modules": [
     {
-      "name": "poi",
-      "chnname": "导入导出",
+      "name": "USER",
+      "chnname": "用户信息",
       "entities": [
         {
           "title": "user",
@@ -112,6 +112,110 @@
             }
           ],
           "chnname": "用户表"
+        },
+        {
+          "title": "account",
+          "fields": [
+            {
+              "name": "USER_ID",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "用户ID",
+              "pk": true,
+              "notNull": true
+            },
+            {
+              "name": "ACCOUNT",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "帐号"
+            },
+            {
+              "name": "PASSWORD",
+              "type": "DefaultString",
+              "remark": "",
+              "chnname": "密码"
+            },
+            {
+              "name": "REVISION",
+              "type": "Integer",
+              "remark": "",
+              "chnname": "乐观锁"
+            },
+            {
+              "name": "CREATED_BY",
+              "type": "IdOrKey",
+              "remark": "",
+              "chnname": "创建人"
+            },
+            {
+              "name": "CREATED_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "创建时间"
+            },
+            {
+              "name": "UPDATED_BY",
+              "type": "IdOrKey",
+              "remark": "",
+              "chnname": "更新人"
+            },
+            {
+              "name": "UPDATED_TIME",
+              "type": "DateTime",
+              "remark": "",
+              "chnname": "更新时间"
+            }
+          ],
+          "indexs": [],
+          "headers": [
+            {
+              "fieldName": "chnname",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "name",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "type",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "dataType",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "remark",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "pk",
+              "relationNoShow": false
+            },
+            {
+              "fieldName": "notNull",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "autoIncrement",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "defaultValue",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "relationNoShow",
+              "relationNoShow": true
+            },
+            {
+              "fieldName": "uiHint",
+              "relationNoShow": true
+            }
+          ],
+          "chnname": "用户账号",
+          "remark": ""
         }
       ],
       "graphCanvas": {
