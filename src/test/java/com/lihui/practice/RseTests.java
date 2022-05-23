@@ -1,7 +1,6 @@
 package com.lihui.practice;
 
 import com.lihui.practice.config.Rsa;
-import com.lihui.practice.util.Md5Util;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -23,19 +22,6 @@ public class RseTests {
     String name;
     @Value("${encrypt-jsk.password}")
     String password;
-
-    @Autowired
-    Md5Util md5Util;
-
-
-    @Test
-    public void rseTets1() {
-
-        String s = md5Util.getMd5("1111111111",true,32);
-        System.out.println("这是MD5加密后的小写====" + s);
-
-    }
-
 
     /**
      * 测试加解密方法
